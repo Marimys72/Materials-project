@@ -1,0 +1,45 @@
+.header
+    padding-top: 30px
+
+.sticky
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    z-index: 100
+    background: rgba(255, 255, 255, 0.70)
+    backdrop-filter: blur(5px)
+    padding-top: 0px
+
+.sticky + .main
+    margin-top: 130px
+
+.navigation
+    display: flex
+    justify-content: flex-start
+    align-items: center
+    &__nav-logo
+        margin-right: 91px
+
+.navigation-list
+    width: 664px
+    list-style: none
+    display: flex
+    justify-content: space-between
+    align-items: center
+    flex-wrap: wrap
+    &__link
+        text-decoration: none
+        color: $color-black-1
+        &:hover
+            color: $color-green
+    &__item
+        padding-top: 10px
+        padding-bottom: 10px
+        font-size: 16px
+        line-height: 19px
+    &__item:not(:last-child)
+        margin-right: 48px
+        
+            
+        

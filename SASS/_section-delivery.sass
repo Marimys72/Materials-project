@@ -1,0 +1,94 @@
+.delivery
+    padding-bottom: 65px
+    
+.delivery-wrapper
+    display: flex
+    justify-content: space-between
+    
+.information-wrapper
+    width: 700px
+    padding-top: 40px
+    margin-right: 20px
+    &__title
+        margin-bottom: 30px
+    &__paragraph
+        width: 579px
+        color: $color-black-2
+        font-size: 20px
+        line-height: 28px
+        margin-bottom: 36px
+    &__list
+        margin-bottom: 184px
+
+.delivery-list
+    list-style: none
+    color: $color-black-2
+    font-size: 16px
+    font-weight: 300
+    line-height: 22px
+    &__item
+        position: relative
+        left: 38px
+        &::before
+            content: ""
+            position: absolute
+            background-image: url(../icons/icon-delivery.svg)
+            background-repeat: no-repeat
+            display: inline-block
+            width: 24px
+            height: 24px 
+            left: -38px 
+        &:not(:last-child)
+            margin-bottom: 64px
+
+.contacts-wrapper
+    display: flex        
+
+.contacts-card
+    background-color: #f8f8f8
+    width: 340px
+    height: 200px
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    text-align: center
+    &__title
+        color: $color-gray-3
+        font-size: 18px
+        font-weight: 500
+        line-height: 18px
+        margin-bottom: 24px
+    &__text
+        color: $color-gray-1
+        font-size: 16px
+        line-height: 16px
+    &:nth-child(1)
+        margin-right: 20px
+
+.map-wrapper
+    position: relative
+    &__card
+        position: absolute
+        top: 40px
+        left: 40px
+    &__figure
+        position: absolute
+        top: 124px
+        left: 109px
+
+.map-card
+    color: $color-white-1
+    font-family: "Montserrat"
+    font-size: 18px
+    font-weight: 700
+    line-height: 25px
+    padding: 12px 14px
+    border-radius: 4px
+    background-color: $color-green
+    width: 172px
+    
+
+        
+
+    
