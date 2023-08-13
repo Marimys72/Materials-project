@@ -71,6 +71,79 @@
             color: $color-black-3
         &:focus::placeholder
             color: transparent
+
+@media (max-width: 378px)
+
+    .section-form
+        background-color: $color-white-1
+    
+    .form-wrapper
+        flex-direction: column
+        justify-content: flex-start
+
+    .call-box
+        max-width: 335px
+        margin-top: 0px
+        margin-bottom: 30px
+        &__title
+            margin-bottom: 23px
+        &__paragraph-1
+            font-size: 16px
+            line-height: 22px
+            margin-bottom: 8px
+        &__paragraph-2
+            font-size: 14px
+            font-weight: 400
+            line-height: 20px
+            letter-spacing: 0.07px
+        &__btn-call
+            display: none
+
+    .form-wrapper-2
+        width: 335px
+        height: auto
+        &__img
+            display: none
+
+    .form
+        position: static
+        padding: 45px 45px 30px
+        border-radius: 12px
+        box-shadow: 0px 4px 40px 0px rgba(7, 17, 51, 0.07)
+        width: 335px
+        margin-top: 0px
+        margin-bottom: 0px
+        &__policy
+            color: $color-black-3
+            font-family: "Rubik"
+            font-size: 15px
+            font-style: normal
+            font-weight: 400
+            line-height: 15px
+        &__input
+            background-color: $color-white-1
+            border: 1px solid #ddd
+            border-radius: 6px
+            width: 100%
+            display: block
+            color: 000
+            padding: 23px 30px
+            &:not(:last-child)
+                margin-bottom: 20px  
+            &:nth-child(3)            
+                margin-bottom: 43px
+                height: 172px
+                padding-bottom: 130px
+            &::placeholder
+                font-family: "Rubik"
+                font-size: 18px
+                font-weight: 400
+                line-height: 18px
+                font-style: normal
+                color: $color-black-3
+            &:focus::placeholder
+                color: transparent
+
             
 
 
