@@ -7,6 +7,7 @@
     display: flex
     justify-content: space-between
     align-items: center
+    flex-wrap: wrap
     &__link-logo
         margin-right: 50px
     &__politic-link
@@ -54,6 +55,57 @@
         font-size: 12px
         line-height: 12px
         display: inline-block
+
+@media (max-width: 378px)
+    .container
+        width: 375px
+        padding-left: 20px
+        padding-right: 20px
+        margin: 0 auto
+
+    .footer
+        padding-top: 12px
+        padding-bottom: 22px
+
+    .footer-wrapper
+        justify-content: space-between
+        &__footer-logo
+            width: 109px
+            height: 43px
+            order: 1
+        &__link-logo
+            margin-right: 24px
+        &__politic-link
+            margin-right: 0px
+            order: 5
+            padding-top: 22px
+            padding-left: 30px
+        &__service-list
+            margin-right: 23px
+        &__sozial-list
+            margin-right: 0px
+
+    .service-list
+        font-size: 14px
+        line-height: 16px
+        order: 3
+        &__item
+            &:not(:last-child)
+                margin-right: 25px        
+
+    .sozial-list
+        display: flex
+        list-style: none
+        order: 2
+        &__item
+            display: inline-block
+            &:not(:last-child)
+                margin-right: 25px
+
+    .phone
+        order: 4
+        padding: 12px 14px 12px 14px
+        
 
             
 
