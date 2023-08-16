@@ -128,7 +128,7 @@ body
     flex-direction: column
     justify-content: flex-start
     &__card
-        &:not(last-child)
+        &:not(:last-child)
             margin-bottom: 80px
 
 .materail-card
@@ -203,7 +203,7 @@ body
     font-weight: 300
     line-height: 20px
     &__price
-        &:not(last-child)
+        &:not(:last-child)
             margin-bottom: 19px
     
 .section-form
@@ -287,6 +287,7 @@ body
 
 .footer-wrapper
     display: flex
+    flex-wrap: wrap
     justify-content: space-between
     align-items: center
     &__link-logo
@@ -336,3 +337,187 @@ body
         font-size: 12px
         line-height: 12px
         display: inline-block
+
+.title
+    color: $color-black-2
+    font-size: 42px
+    font-weight: 500
+    line-height: normal
+
+@media (max-width: 379px)
+    .container
+        width: 375px
+        padding-left: 20px
+        padding-right: 20px
+        margin: 0 auto
+
+    .navigation-list
+        display: none
+
+    .header
+        padding-top: 10px
+
+    .logo
+        width: 112px
+        height: 44px
+
+    .sticky + .main
+        margin-top: 30px
+
+    .navigation
+        &__nav-logo
+            margin-right: 199px
+
+    .materials
+        padding-top: 25px
+        padding-bottom: 57px
+
+    .material-wrapper
+        &__card
+            &:not(:last-child)
+                margin-bottom: 30px
+
+    .materail-card
+        flex-direction: column
+        &__img
+            margin-bottom: 30px
+            width: 100%     
+
+    .info-box
+        &__title
+            margin-bottom: 21px
+        &__text
+            margin-bottom: 21px             
+
+    .subtext
+        font-size: 14px
+        line-height: 19px                    
+
+    .subtitle
+        font-size: 24px
+        font-weight: 500
+        line-height: normal
+
+    .box-price
+        width: 335px
+        &__stroke
+            &:not(:last-child)
+                margin-bottom: 22px
+
+    .stroke-wrapper
+        width: 335px
+
+    .stroke
+        font-size: 14px
+        line-height: 18px
+
+    .price-wrapper
+        font-size: 14px
+        line-height: 18px
+
+    .container-call
+        width: 375px
+        padding-left: 20px
+        padding-right: 20px
+        margin: 0 auto
+
+    .section-form
+        background-color: $color-white-1
+        padding-top: 0px
+        margin-bottom: 40px
+    
+    .form-wrapper
+        flex-direction: column
+        justify-content: flex-start
+
+    .call-box
+        max-width: 335px
+        margin-top: 0px
+        margin-bottom: 30px
+        &__title
+            margin-bottom: 23px
+        &__paragraph-1
+            font-size: 16px
+            line-height: 22px
+            margin-bottom: 8px
+        &__paragraph-2
+            font-size: 14px
+            font-weight: 400
+            line-height: 20px
+            letter-spacing: 0.07px
+            margin-bottom: 0px
+        &__btn-call
+            display: none
+
+    .form-wrapper-2
+        width: 335px
+        height: auto
+        &__img
+            display: none
+
+    .form
+        position: static
+        padding: 20px 15px
+        width: 335px
+        margin-top: 0px
+        margin-bottom: 0px
+        &__policy
+            font-size: 12px
+            line-height: 12px
+            text-align: center
+        &__input
+            color: $color-black-3
+            padding: 15px 15px
+            &:not(:last-child)
+                margin-bottom: 15px  
+            &:nth-child(3)            
+                margin-bottom: 20px
+                height: 98px
+                padding-bottom: 80px
+            &::placeholder
+                font-size: 14px
+                line-height: 14px
+
+    .title
+        color: $color-black-1
+        font-size: 24px
+
+    .footer
+        padding-top: 12px
+        padding-bottom: 22px
+
+    .footer-wrapper
+        &__footer-logo
+            width: 109px
+            height: 43px
+            order: 1
+        &__link-logo
+            margin-right: 24px
+        &__politic-link
+            margin-right: 0px
+            order: 5
+            padding-top: 22px
+            padding-left: 30px
+        &__service-list
+            margin-right: 23px
+        &__sozial-list
+            margin-right: 0px
+
+    .service-list
+        font-size: 14px
+        line-height: 16px
+        order: 3
+        &__item
+            &:not(:last-child)
+                margin-right: 25px        
+
+    .sozial-list
+        order: 2
+        &__item
+            &:not(:last-child)
+                margin-right: 25px
+
+    .phone
+        order: 4
+        padding: 12px 14px 12px 14px
+
