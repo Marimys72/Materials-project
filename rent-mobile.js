@@ -1,10 +1,5 @@
-let mobileWidth = window.innerWidth;
-let mobileHeight = window.innerHeight;
+window.addEventListener("resize", changeText);
 
 function changeText() {
     document.querySelector(".subtitle-mobile").textContent = "Аренда техники";
-}
-
-if (mobileWidth < mobileHeight) {
-    changeText();
 }
