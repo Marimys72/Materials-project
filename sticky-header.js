@@ -5,7 +5,7 @@ window.onscroll = function() {
 }
 
 // Получить шапку страницы
-let headerMain = document.querySelector('.header');
+let headerMain = document.querySelectorAll('.header');
 
 // Получить смещение позиции шапки
 let sticky = headerMain.offsetTop;
