@@ -5,7 +5,7 @@ window.onscroll = function() {
 }
 
 // Получить шапку страницы
-let headerMain = document.querySelectorAll('.header');
+let headerMain = document.querySelector('.header');
 
 // Получить смещение позиции шапки
 let sticky = headerMain.offsetTop;
@@ -18,9 +18,7 @@ let btnSecond = document.querySelector('.btn-sticky');
 function myFunction() {
     if(window.scrollY >= sticky) {
         headerMain.classList.add('sticky');
-    } else {
-        headerMain.classList.remove('sticky');
-    }
+    } 
 }
 
 //Добавить класс активности к кнопке при прокрутке страницы
