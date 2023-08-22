@@ -30,3 +30,14 @@ function addButton() {
         btnSecond.classList.remove('btn-sticky_active');
     }
 }
+
+const menuBtn = document.querySelector(".menu-btn");
+const menuMobile = document.querySelector(".navigation-list");
+
+menuBtn.addEventListener("click", function() {
+    
+    menuMobile.classList.toggle("menu-open");
+    headerMain.classList.toggle("sticky-mobile");
+    btnSecond.classList.toggle("btn-call-mobile");
+    
+});

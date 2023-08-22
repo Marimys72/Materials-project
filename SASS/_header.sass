@@ -14,12 +14,33 @@
 .sticky + .main
     margin-top: 130px
 
+.menu-open
+    display: flex !important
+
+.menu-btn
+    display: none
+    width: 24px
+    height: 24px
+    border: none
+    background-color: transparent
+    border-radius: 0
+    flex-direction: column
+    justify-content: space-between
+    padding: 1px
+
+.menu-btn span
+    height: 3px
+    background-color: $color-black-1
+    width: 100%
+    border-radius: 3px
+
 .navigation
     display: flex
     justify-content: flex-start
     align-items: center
     &__nav-logo
         margin-right: 91px
+    
 
 .navigation-list
     width: 664px
@@ -43,9 +64,6 @@
 
 @media (max-width: 378px)
 
-    .navigation-list
-        display: none
-
     .header
         padding-top: 10px
 
@@ -55,6 +73,53 @@
 
     .sticky + .main
         margin-top: 30px
+
+    .menu-btn
+        display: flex
+        margin-left: auto
+
+    .navigation-list
+        display: none
+        position: fixed
+        width: 281px
+        flex-direction: column
+        bottom: 0
+        right: 0
+        top: 0
+        left: 20px
+        overflow-y: auto
+        margin-top: 94px
+        order: 2
+        height: 312px
+        align-items: start
+        &__link
+            text-decoration: none
+            color: $color-black-1
+            &:hover
+                color: $color-green
+                &_active
+                color: $color-green
+                position: relative
+                &::after
+                    content: '\203A'
+                    position: absolute
+                    right: -15px
+                    transform: rotate(90deg)
+        &__item
+            padding-top: 0px
+            padding-bottom: 0px
+            font-size: 20px
+            line-height: normal
+            margin-right: 0px
+
+    .sticky-mobile
+        height: 800px
+
+    
+
+    
+
+    
 
         
             

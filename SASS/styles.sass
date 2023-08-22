@@ -54,6 +54,26 @@ body
 .sticky + .main
     margin-top: 130px
 
+.menu-open
+    display: flex !important
+
+.menu-btn
+    display: none
+    width: 24px
+    height: 24px
+    border: none
+    background-color: transparent
+    border-radius: 0
+    flex-direction: column
+    justify-content: space-between
+    padding: 1px
+
+.menu-btn span
+    height: 3px
+    background-color: $color-black-1
+    width: 100%
+    border-radius: 3px
+
 .navigation
     display: flex
     justify-content: flex-start
@@ -523,4 +543,42 @@ body
 
     .btn-sticky_active
         display: none
+
+    .menu-btn
+        display: flex
+        margin-left: auto
+
+    .navigation-list
+        display: none
+        position: fixed
+        width: 281px
+        flex-direction: column
+        bottom: 0
+        right: 0
+        top: 0
+        left: 20px
+        overflow-y: auto
+        margin-top: 94px
+        order: 2
+        height: 312px
+        align-items: start
+        &__link
+            &_active
+                &::after
+                    right: -15px
+        &__item
+            padding-top: 0px
+            padding-bottom: 0px
+            font-size: 20px
+            line-height: normal
+            margin-right: 0px
+
+    .sticky-mobile
+        height: 800px
+
+    .btn-call-mobile
+        display: block
+        order: -1
+        position: absolute
+        top: 480px
 
